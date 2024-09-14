@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan MISA SYUKUR PANCAWINDU</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Animate.css for animations -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Splash Screen -->
+    <div id="splashScreen" class="splash-screen">
+        <div class="splash-content text-center">
+            <img src="img/invitation-image.JPG" width="200" height="250" alt="Invitation Image">
+            <h1>Undangan MISA SYUKUR PANCAWINDU</h1>
+            <p>Anak Dari Saudara Kami P. Andreas Hane, SVD</p>
+            <button class="btn btn-light" onclick="hideSplashScreen()">Buka Undangan</button>
+        </div>
+    </div>
+
+
+    <!-- Main Content -->
+    <div id="mainContent" style="display: none;">
+
+        <!-- Floating Navbar at the Bottom -->
+        <nav id="bottomNavbar" class="navbar navbar-expand-sm navbar-orange bg-orange fixed-bottom">
+            <div class="container-fluid">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pastor"><i class="fas fa-church"></i> Pastor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#acara"><i class="fas fa-calendar-day"></i> Acara</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery"><i class="fas fa-image"></i> Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lokasi"><i class="fas fa-map-marker-alt"></i> Waktu & Lokasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ucapan"><i class="fas fa-comments"></i> Ucapan</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Pastor and Imamat Logo Section -->
+        <section id="pastor" class="py-5">
+            <div class="container text-center">
+                <img src="img/P_andreas.png" alt="Pastor Andreas" class="img-fluid mb-3" width="300">
+                <img src="img/imamat.png" alt="Imamat 40th" class="img-fluid mb-3" width="200">
+                <h4 class="header-section">
+                    <p>Bagi Allah Tidak Ada Yang Mustahil</p>
+                    <p>Lukas,(1:37)</p>
+                </h4>
+            </div>
+        </section>
+
+        <!-- Accordion Section -->
+        <section id="acara" class="py-5">
+            <div class="container">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-center my-4">Acara dan Resepsi</h2>
+                        <p>&nbsp;&nbsp;&nbsp;1. Dalam Perayaan Ekaristi Setelah Doa Penutup</p>
+                        <ul>
+                            <li>Pembukaan oleh Protokol</li>
+                            <li>Ketua Panitia : Gregorius Mau, S.H</li>
+                            <li>Pastor Paroki St. Yohanes Pemandi Kaputu</li>
+                            <li>Pater Propinsial SVD Timor</li>
+                            <li>Yubilaris</li>
+                            <li>YM. Uskup Atambua</li>
+                        </ul>
+                        <p>&nbsp;&nbsp;&nbsp;2. Setelah Ekaristi</p>
+                        <ul>
+                            <li>Santap Siang</li>
+                            <li>Acara Hiburan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mini Gallery Section -->
+        <section id="gallery" class="py-5">
+            <div class="container">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-center my-4">Gallery</h2>
+                        <div class="row">
+                            <div class="col-md-4 mb-3 d-flex align-items-stretch">
+                                <div class="card w-100">
+                                    <img src="img/P_andreas.png" height="200" width="300" class="card-img-top" alt="Pastor Andreas">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 d-flex align-items-stretch">
+                                <div class="card w-100">
+                                    <img src="img/andreas1.JPG" height="200" width="300" class="card-img-top" alt="Imamat 40th">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 d-flex align-items-stretch">
+                                <div class="card w-100">
+                                    <img src="img/jesus.JPG" height="200" width="300" class="card-img-top" alt="Lokasi Acara">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hari & Tempat Acara Section -->
+        <section id="lokasi" class="py-5">
+            <div class="container">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-center my-4">Waktu & Tempat Acara</h2>
+                        <p class="text-center mb-4">
+                            <strong>Hari/Tanggal:</strong> Rabu, 26 September 2024<br>
+                            <strong>Waktu:</strong> Pukul 10:00 Wita<br>
+                            <strong>Tempat:</strong> Rumah Keluarga P. Andreas Hane, SVD<br> Kampung Oekomis-Looneke, Desa Babotin, Kec. Botin Leobele
+                        </p>
+                        <div class="embed-responsive embed-responsive-16by9 mb-4">
+                            <iframe class="embed-responsive-item" src="https://maps.google.com/maps?q=Atambua&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="400"></iframe>
+                        </div>
+                        <p class="text-center text-danger"><strong>Mohon Para Imam Membawa Kasula Putih</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guest Greetings Section -->
+        <section id="ucapan" class="py-5">
+            <div class="container">
+                <div class="card">
+                    <div class="card-body">
+
+                        <h2 class="text-center mb-4">Ucapan Selamat</h2>
+                        <form id="greetingsForm">
+                            <div class="mb-3">
+                                <label for="guestName" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="guestName" placeholder="Nama Anda" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Ucapan</label>
+                                <textarea class="form-control" id="message" rows="3" placeholder="Pesan Ucapan Anda" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kirim Ucapan</button>
+                        </form>
+
+                        <div id="greetingsList" class="mt-4">
+                            <!-- Greetings will be appended here dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-4">
+            <p>&copy; 2024 Syukuran Pancawindu - All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const checkInterval = 5 * 60 * 1000; // Check every 5 minutes
+        const noUpdateLimit = 1 * 60 * 60 * 1000; // 1 hour in milliseconds
+
+        // Initialize data and timestamps
+        let csvData = JSON.parse(localStorage.getItem('csvData')) || [];
+        let lastUpdate = new Date(localStorage.getItem('lastUpdate')) || new Date();
+
+        // Hide splash screen and show main content
+        function hideSplashScreen() {
+            document.getElementById('splashScreen').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+            loadGreetings(); // Load existing greetings when splash screen is hidden
+        }
+
+        // Load greetings from in-memory CSV data
+        function loadGreetings() {
+            const greetingsList = document.getElementById('greetingsList');
+            greetingsList.innerHTML = csvData.map(row => `
+                <div>
+                    <strong>${row[0]}</strong> <em>(${row[2]})</em>
+                    <p>${row[1]}</p>
+                    <hr>
+                </div>
+            `).join('');
+        }
+
+        // Save data to localStorage and download CSV
+        function downloadCSV() {
+            const csvContent = 'data:text/csv;charset=utf-8,' + csvData.map(e => e.join(',')).join('\n');
+            const encodedUri = encodeURI(csvContent);
+            const link = document.createElement('a');
+            link.setAttribute('href', encodedUri);
+            link.setAttribute('download', 'greetings.csv');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // Handle form submission
+        const form = document.getElementById('greetingsForm');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const guestName = document.getElementById('guestName').value;
+            const message = document.getElementById('message').value;
+
+            if (guestName && message) {
+                const timestamp = new Date().toISOString();
+                csvData.push([guestName, message, timestamp]);
+                localStorage.setItem('csvData', JSON.stringify(csvData)); // Save to localStorage
+                localStorage.setItem('lastUpdate', new Date().toISOString()); // Update last update time
+                loadGreetings(); // Reload the list
+                form.reset(); // Clear the form
+            }
+        });
+
+        // Auto-download CSV if no new comments in 1 hour
+        function autoDownloadCSV() {
+            const now = new Date();
+            const lastUpdateDiff = now - new Date(localStorage.getItem('lastUpdate'));
+
+            if (lastUpdateDiff >= noUpdateLimit) { // 1 hour in milliseconds
+                downloadCSV();
+                localStorage.setItem('lastUpdate', now.toISOString()); // Reset last update time after download
+            }
+        }
+
+        // Initial load and set up intervals
+        document.addEventListener('DOMContentLoaded', function() {
+            loadGreetings();
+            setInterval(autoDownloadCSV, checkInterval); // Check every 5 minutes
+        });
+    </script>
+
+</body>
+
+</html>

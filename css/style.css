@@ -1,0 +1,250 @@
+/* Splash Screen */
+
+#splashScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(235, 105, 24, 0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    text-align: center;
+    animation: fadeIn 2s;
+}
+
+.splash-content {
+    max-width: 70%;
+    max-height: 90%;
+}
+
+#splashScreen img {
+    width: 65%;
+    height: auto;
+    border-radius: 20%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+#splashScreen h1 {
+    font-size: 2rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Hide main content during splash screen */
+
+#mainContent {
+    display: none;
+}
+
+
+/* General styling */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+}
+
+
+/* Header Section */
+
+.header-section {
+    background-color: #e36c11;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.pastor-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.pastor-section img {
+    margin-right: 20px;
+}
+
+.accordion-button {
+    font-size: 1.2rem;
+}
+
+
+/* Custom CSS for Gallery Section */
+
+.card-img-top {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+/* Floating Navbar at the Bottom */
+
+#bottomNavbar {
+    background-color: #ff5100;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -1px 5px rgba(244, 110, 0, 0.954);
+    padding: 0.5rem;
+    /* Reduced padding to make navbar more compact */
+    height: auto;
+    /* Adjust height to fit content */
+}
+
+#bottomNavbar .nav-link {
+    color: #ffffff;
+    font-size: 0.875rem;
+    /* Smaller font size for a more compact look */
+    font-family: 'Arial', sans-serif;
+    padding: 0.5rem 0.75rem;
+    /* Reduced padding for nav items */
+    transition: color 0.3s ease;
+}
+
+#bottomNavbar .nav-link:hover {
+    color: #f9ece5;
+}
+
+#bottomNavbar .navbar-nav {
+    flex-direction: row;
+    margin: 0;
+    /* Remove default margin to compact the navbar */
+}
+
+#bottomNavbar .nav-item {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    /* Remove default margin to compact the navbar */
+}
+
+
+/* Card Styling */
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(246, 67, 2, 0.1);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+/* Footer Styling */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
+}
+
+
+/* Navbar Styling */
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiI+PHBhdGggZD0iTTAsMGg0LjUsMTh2LTQuNXoiIGZpbGw9IiMzMzMiLz48cGF0aCBkPSJNMCwwaDQuNSw0Ljh2LTQuNVoiIGZpbGw9IiMzMzMiLz48cGF0aCBkPSJNMCw0LjV2OC41aDQuNXoiIGZpbGw9IiMzMzMiLz48cGF0aCBkPSJNMCw4LjV2NC41aDQuNXoiIGZpbGw9IiMzMzMiLz48cGF0aCBkPSJNMCwxMi42djQuNXoiIGZpbGw9IiMzMzMiLz48L3N2Zz4=');
+}
+
+
+/* Responsive Navbar */
+
+@media (max-width: 768px) {
+    .pastor-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .pastor-section img {
+        margin-bottom: 20px;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-item {
+        margin: 0;
+    }
+}
+
+
+/* Floating Navbar for Social Media Links */
+
+.floating-navbar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    z-index: 9999;
+}
+
+.floating-navbar .btn {
+    border-radius: 50%;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.4s ease;
+}
+
+.floating-navbar .btn-light {
+    background-color: #f8f9fa;
+    color: #ff3c00;
+}
+
+
+/* Section Styling */
+
+#acara,
+#lokasi,
+#ucapan {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+p,
+li {
+    font-family: 'Arial', sans-serif;
+}
